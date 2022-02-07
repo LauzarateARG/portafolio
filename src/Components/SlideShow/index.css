@@ -1,0 +1,35 @@
+.slideContainer {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.slide {
+  min-width: 100%;
+  overflow: hidden;
+  transition: 0.3s ease all;
+  z-index: 10;
+  max-height: 500px;
+  position: relative;
+}
+
+.img {
+  height: 700px;
+  width: 100%;
+  vertical-align: top;
+}
+
+.textSlide {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 60px;
+  text-align: center;
+  position: absolute;
+  width: 483px;
+  height: 379px;
+  left: 64px;
+  top: 65px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+
+}

@@ -1,3 +1,22 @@
-.navBar{
-    background-color: red;
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #e41b44;
+  height: 44px;
+  width: 100%;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+.menu-item{
+    width: 82px;
+    height: 20px;
+    margin-right: 14px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
 }
