@@ -33,3 +33,32 @@
   font-size: 64px;
 
 }
+
+.controls{
+  position: absolute;
+  top: 470px;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  
+}
+.controlLeft , .controlRight{
+  pointer-events: all;
+  background: none;
+  border: none;
+  border-radius: 200px;
+  cursor: pointer;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  position: absolute;
+  transition:  .3s ease all;
+}
+.controlRight{
+  right:20px;
+}
+.controlLeft{
+  left:20px;
+}
