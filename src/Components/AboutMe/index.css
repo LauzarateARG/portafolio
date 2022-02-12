@@ -1,5 +1,33 @@
-.aboutMe{
-    height: 980px;
-    background-color: #934D91;
-    margin-top: -22px;
+.aboutMe {
+  padding: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #934d91;
+}
+
+.infoContain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #5caec1;
+  border-radius: 17px;
+  border: solid 4px #ffffff;
+  width: 1000px;
+  height: 748px;
+  color: #ffffff;
+}
+
+.imgContain {
+  overflow: hidden;
+  border: solid 5px #e41b44;
+  border-radius: 100%;
+  width: 203px;
+  height: 211px;
+}
+
+.img {
+  max-width: 100%;
+  max-height: 100%;
 }

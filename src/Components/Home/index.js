@@ -1,14 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import firebaseApp from "../../config/firebaseConfig";
+import { getStorage, ref, getDownloadURL } from "firebase/storage";
 import "./index.css";
-function home() {
+export default function Home() {
+  const [url, setUrl] = useState(null);
 
-  function seeProyects(){
-    alert("See projects")
+  const storage = getStorage(firebaseApp);
+
+  async function getUrl() {
+    const storageRef = ref(
+      storage,
+      `gs://portafolio-804f2.appspot.com/Cv/LauZarateCV.pdf`
+    );
+    const urlDowload = await getDownloadURL(storageRef).then((url) => url);
+    setUrl(urlDowload);
   }
 
-  function downloadCV(){
-    alert("Download CV")
+  function downloadCV() {
+    console.log(url);
+    window.open(url, "_blank");
   }
+
+  useEffect(() => {
+    getUrl();
+  }, []);
 
   return (
     <div className="home">
@@ -17,15 +32,14 @@ function home() {
         <p className="job">Web Developer</p>
         <p className="descrption">
           This is my personal portfolio, here you can see the projects I worked
-          on and also my personal information
+          on and also my personal information. Thanks for your attention
         </p>
         <div className="btnContain">
-          <button className="btn1" onClick={seeProyects} > See projects </button>
-          <button className="btn2" onClick={downloadCV} > Download CV </button>
+          <button className="btn1" onClick={downloadCV}>
+            Curriculum vitae
+          </button>
         </div>
       </div>
     </div>
   );
 }
-
-export default home;

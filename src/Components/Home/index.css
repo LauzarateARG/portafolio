@@ -1,8 +1,8 @@
 .home {
+  padding: 43px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 480px;
   background-color: #e41b44;
 }
 

@@ -9,12 +9,8 @@ export default function SlideShow() {
   const slideContainer = useRef(null);
   const intervalSlideShow = useRef(null);
 
-  function testeo() {
-    console.log(slideContainer.current.children[0]);
-  }
-
   function next() {
-    if (slideContainer.current.children.length > 0) {
+    if (slideContainer.current.children.length > 0) {    
       //Obtener el primer elemento del slide contain
       const firstElement = slideContainer.current.children[0];
 
