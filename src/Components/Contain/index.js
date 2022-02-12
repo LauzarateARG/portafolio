@@ -3,6 +3,7 @@ import "./index.css"
 import Home from '../Home/index';
 import AboutMe from "../AboutMe/index"
 import SlideShow from '../SlideShow/index';
+import Proyects from '../Proyects/index';
 
 function contain() {
   return (
@@ -10,6 +11,7 @@ function contain() {
           <SlideShow/>
           <Home />
           <AboutMe/>
+          <Proyects/>
       </div>
   );
 }

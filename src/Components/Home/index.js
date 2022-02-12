@@ -17,7 +17,6 @@ export default function Home() {
   }
 
   function downloadCV() {
-    console.log(url);
     window.open(url, "_blank");
   }
 
