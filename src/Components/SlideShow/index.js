@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from "react";
 import "./index.css";
 
 //import Assets
-import img1 from "../../assets/1.png";
-import img2 from "../../assets/2.png";
+import img1 from "../../assets/Technologies/1.png";
+import img2 from "../../assets/Technologies/2.png";
 
 export default function SlideShow() {
   const slideContainer = useRef(null);

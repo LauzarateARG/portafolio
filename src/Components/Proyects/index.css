@@ -14,7 +14,14 @@
   background-color: #934d91;
   border: 4px solid #ffffff;
   border-radius: 7px;
-  width: 735px;
+  width: 1000px;
   height: 735px;
   margin-left: 20px;
+  overflow: hidden;
+}
+
+.CardBtn{
+  border: none;
+  background: none;
+  cursor:pointer;
 }

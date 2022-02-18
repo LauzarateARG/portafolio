@@ -1,17 +1,14 @@
 import React from "react";
 import "./index.css";
 
-export default function Card() {
+export default function Card({title,detail}) {
   return (
     <div className="Card">
       <div className="title">
-        <p>Pokemon APP</p>
+        <p>{title}</p>
       </div>
       <div className="description">
-        <p>
-          App donde poder ver todos lo pokemons existentes y poder crear los
-          propios
-        </p>
+        <p>{detail}</p>
       </div>
     </div>
   );

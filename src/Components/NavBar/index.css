@@ -12,11 +12,21 @@
   align-items: center;
   list-style: none;
 }
-.menu-item{
-    width: 82px;
-    height: 20px;
-    margin-right: 14px;
-    font-size: 16px;
-    text-align: center;
-    cursor: pointer;
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 82px;
+  height: 44px;
+  border-radius: 3px;
+  margin-right: 14px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.9s;
+}
+
+.menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.561);
+  color: #fff;
 }
