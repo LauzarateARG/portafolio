@@ -1,0 +1,24 @@
+.iconContain {
+  padding: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #e41b44;
+}
+
+.backgroundBtn {
+  border: 4px solid #010101;
+  margin-left: 50px;
+  height: 176px;
+  width: 190px;
+  border-radius: 15px;
+  background: #5caec1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.icon{
+    max-width: 60%;
+    max-height: 60%;
+}

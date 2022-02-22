@@ -38,6 +38,9 @@ export default function Proyects() {
       </div>
       <div className="cardShow">
         <Proyect data={ProyectsIfo[proyectShow].img} />
+        <div className="CardShowControl" >
+          <button className="btnControls" onClick={()=>alert("show more imfo proyect")}>Show more</button>
+      </div> 
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import Home from '../Home/index';
 import AboutMe from "../AboutMe/index"
 import SlideShow from '../SlideShow/index';
 import Proyects from '../Proyects/index';
+import ContactMe from '../ContactMe/index';
 
 function contain() {
   return (
@@ -12,6 +13,7 @@ function contain() {
           <Home />
           <AboutMe/>
           <Proyects/>
+          <ContactMe/>
       </div>
   );
 }
