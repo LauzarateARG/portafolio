@@ -1,11 +1,8 @@
 import React from "react";
 import "./index.css";
-import profileImg from "../../assets/profileImg.png"
+import profileImg from "../../assets/profileImg.png";
 
-function aboutMe() {
-  function showMore(){
-    alert("mostrar mas imformacion ")
-  }
+export default function AboutMe() {
   return (
     <div className="aboutMe">
       <div className="infoContain">
@@ -16,14 +13,9 @@ function aboutMe() {
           and my flexibility when it comes to solving problems.
         </p>
         <div className="imgContain">
-          <img src={profileImg} className="img" alt="profileImg"/>
+          <img src={profileImg} className="img" alt="profileImg" />
         </div>
-      </div>
-      <div>
-        <button className="btn" onClick={showMore}>Show more information</button>
       </div>
     </div>
   );
 }
-
-export default aboutMe;

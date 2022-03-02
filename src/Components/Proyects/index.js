@@ -16,14 +16,21 @@ export default function Proyects() {
       title: "Spotify Cloned",
       detail: "Clon de spotify con todas las funciones basicas",
       img: spotifyImg,
+      link:"link del proyecto"
     },
     {
       id: 1,
       title: "WeatherApp",
       detail: "App del clima donde ver la temperatura de tu ciudad",
       img: WeatherAppImg,
+      link:"https://weatherapp-imjm0ab7p-lauzaratearg.vercel.app"
     },
   ];
+
+  const moreInformation = ()=> {
+    window.open(ProyectsIfo[proyectShow].link, "_blank");
+  }
+
 
   return (
     <div className="proyects">
@@ -39,7 +46,7 @@ export default function Proyects() {
       <div className="cardShow">
         <Proyect data={ProyectsIfo[proyectShow].img} />
         <div className="CardShowControl" >
-          <button className="btnControls" onClick={()=>alert("show more imfo proyect")}>Show more</button>
+          <button className="btnControls" onClick={moreInformation}>Show Proyect</button>
       </div> 
       </div>
     </div>

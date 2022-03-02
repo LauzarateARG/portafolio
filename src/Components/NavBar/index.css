@@ -20,13 +20,13 @@
   height: 44px;
   border-radius: 3px;
   margin-right: 14px;
-  font-size: 16px;
-  text-align: center;
-  cursor: pointer;
   transition: all 0.9s;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  z-index: 10;
 }
-
 .menu-item:hover {
   background-color: rgba(0, 0, 0, 0.561);
-  color: #fff;
+  color: #FFFFFF;
 }

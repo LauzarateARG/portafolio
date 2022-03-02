@@ -1,0 +1,27 @@
+.footer{
+    padding: 30px 120px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: #FFFFFF;
+    background: #522B50;
+}
+
+.footerTitle{
+    font-weight: bold;
+}
+
+.footerText{
+    font-size: 13px;
+}
+
+.sendMail{
+    display: flex;
+    flex-direction: column;
+}
+.mailBtn{
+    height: 40px;
+    color: #FFFFFF;
+    background: #5CAEC1;
+    border: none;
+    cursor: pointer;
+}
